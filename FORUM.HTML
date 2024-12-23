@@ -1,0 +1,162 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="discussion">
+            <h2>Share Your Thoughts on Local Events</h2>
+            <p>What's your favorite community event? Join the discussion!</p>
+            <a href="feedback.html">Feedback!</a>
+        </div>
+        <div class="discussion">
+            <h2>Neighborhood Improvement Ideas</h2>
+            <p>What improvements would you like to see in the neighborhood? Share your ideas here.</p>
+            <a href="feedback.html">Feedback!</a>
+        </div>
+    </main>
+
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Thoughts on Local Events</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 1rem;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        .submit-button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Share Your Thoughts on Local Events</h1>
+            <p>What's your favorite community event? Join the discussion by sharing your feedback below!</p>
+        </div>
+
+        <div class="form-container">
+           
+            <form action="/submit-feedback" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email (optional):</label>
+                <input type="email" id="email" name="email">
+
+                <label for="favorite_event">What's your favorite community event?</label>
+                <input type="text" id="favorite_event" name="favorite_event" required>
+
+                <label for="feedback">Additional Thoughts:</label>
+                <textarea id="feedback" name="feedback" placeholder="Share your thoughts on local events..." required></textarea>
+
+                <button type="submit" class="submit-button">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+   
+
+</body>
+</html>
